@@ -1,46 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8"/>
-  <link rel="icon" href="static/icon.png"/> <!-- replace with your favicon path -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
-  <meta name="theme-color" content="#000000"/>
-  <meta name="description" content="Persona is your personal sanctuary for mental wellness. Navigate daily life with our guided diary, track and understand your emotions, find calm with breathing exercises, de-stress with mini-games, and gain insights with personalized analytics. Your journey to a more peaceful mind starts here."/>
+<html lang="en" data-theme="base44">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="./icon.png" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Persona is your personal sanctuary for mental wellness. Navigate daily life with our guided diary, track and understand your emotions, find calm with breathing exercises, de-stress with mini-games, and gain insights with personalized analytics. Your journey to a more peaceful mind starts here."
+    />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-title" content="Persona" />
+    <link rel="apple-touch-icon" href="./icon.png" />
+    <link rel="manifest" href="./manifest.json" />
+    <title>Persona: Your Mindful Companion</title>
 
-  <title>Persona: Your Mindful Companion</title>
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Tailwind -->
-  <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Social tags -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://<your-username>.github.io/<your-repo>/" />
+    <meta property="og:title" content="Persona: Your Mindful Companion" />
+    <meta
+      property="og:description"
+      content="Persona is your personal sanctuary for mental wellness. Navigate daily life with our guided diary, track and understand your emotions, find calm with breathing exercises, de-stress with mini-games, and gain insights with personalized analytics. Your journey to a more peaceful mind starts here."
+    />
+    <meta property="og:image" content="./icon.png" />
 
-  <!-- Manifest for PWA -->
-  <link rel="manifest" href="manifest.json"/>
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://<your-username>.github.io/<your-repo>/" />
+    <meta property="twitter:title" content="Persona: Your Mindful Companion" />
+    <meta
+      property="twitter:description"
+      content="Persona is your personal sanctuary for mental wellness. Navigate daily life with our guided diary, track and understand your emotions, find calm with breathing exercises, de-stress with mini-games, and gain insights with personalized analytics. Your journey to a more peaceful mind starts here."
+    />
+    <meta property="twitter:image" content="./icon.png" />
 
-  <!-- Open Graph -->
-  <meta property="og:type" content="website"/>
-  <meta property="og:url" content="https://personaishim.github.io/persona-website/"/>
-  <meta property="og:title" content="Persona: Your Mindful Companion"/>
-  <meta property="og:description" content="Persona is your personal sanctuary for mental wellness. Navigate daily life with our guided diary, track and understand your emotions, find calm with breathing exercises, de-stress with mini-games, and gain insights with personalized analytics. Your journey to a more peaceful mind starts here."/>
-  <meta property="og:image" content="static/og-image.jpg"/> <!-- replace with your image path -->
+    <!-- Rewardful -->
+    <script>
+      !(function (n, u) {
+        n._rwq = u;
+        n[u] =
+          n[u] ||
+          function () {
+            (n[u].q = n[u].q || []).push(arguments);
+          };
+      })(window, "rewardful");
+    </script>
+    <script async data-rewardful="0259ba" src="https://r.wdfl.co/rw.js"></script>
 
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image"/>
-  <meta property="twitter:url" content="https://personaishim.github.io/persona-website/"/>
-  <meta property="twitter:title" content="Persona: Your Mindful Companion"/>
-  <meta property="twitter:description" content="Persona is your personal sanctuary for mental wellness. Navigate daily life with our guided diary, track and understand your emotions, find calm with breathing exercises, de-stress with mini-games, and gain insights with personalized analytics. Your journey to a more peaceful mind starts here."/>
-  <meta property="twitter:image" content="static/og-image.jpg"/> <!-- replace with your image path -->
+    <!-- Local JS and CSS -->
+    <script defer src="./static/js/vendors.49f0005b.js"></script>
+    <script defer src="./static/js/main.f04372e4.js"></script>
+    <link rel="stylesheet" href="./static/css/vendors.77bf307e.css" />
+    <link rel="stylesheet" href="./static/css/main.74988155.css" />
+  </head>
 
-  <!-- Rewardful (optional, can remove if not needed) -->
-  <script>!function(n,u){n._rwq=u,n[u]=n[u]||function(){(n[u].q=n[u].q||[]).push(arguments)}}(window,"rewardful")</script>
-  <script async data-rewardful="0259ba" src="https://r.wdfl.co/rw.js"></script>
-
-  <!-- Your static files -->
-  <script defer src="static/js/vendors.49f0005b.js"></script>
-  <script defer src="static/js/main.f04372e4.js"></script>
-  <link rel="stylesheet" href="static/css/vendors.77bf307e.css"/>
-  <link rel="stylesheet" href="static/css/main.74988155.css"/>
-</head>
-<body>
-  <noscript>You need to enable JavaScript to run this app.</noscript>
-  <div id="root"></div>
-</body>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
 </html>
